@@ -6,6 +6,9 @@ window.customElements.define('foo-box', Foo);
 // Create instance of Foo
 let myfoo = new Foo();
 
+// Append to body (to run connectedCallback)
+document.body.appendChild(myfoo);
+
 /**
  *  Tests
  * 
@@ -32,6 +35,10 @@ test('Check clicker clicks and adds', () => {
 
   // Re-test
   expect(myfoo.clicker).toBe(8);
+});
+
+test('Test element textContent', () => {
+  expect(myfoo.textContent).toBe('My Foo Bar Element');
 });
 
 test.skip('Test tag name (does not work)', () => {
