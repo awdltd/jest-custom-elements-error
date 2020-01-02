@@ -1,0 +1,19 @@
+{
+  "name": "jest-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=jest-environment-happy-dom"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "jest": "^24.9.0",
+    "jest-environment-happy-dom": "0.0.36"
+  }
+}
