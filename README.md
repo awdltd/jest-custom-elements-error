@@ -7,4 +7,4 @@ To install
 To test
 ```npm test```
 
-Currently uses Happy-Dom env
+Currently uses JSDom `^16.2.0` env
