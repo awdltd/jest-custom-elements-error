@@ -1,4 +1,4 @@
-import Foo from './fooclass';
+import Foo from '../src/fooclass';
 
 // Define Foo
 window.customElements.define('foo-box', Foo);
