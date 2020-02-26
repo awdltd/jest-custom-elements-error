@@ -41,10 +41,10 @@ test('Test element textContent', () => {
   expect(myfoo.textContent).toBe('My Foo Bar Element');
 });
 
-test.skip('Test tag name (does not work)', () => {
+test('Test tag name', () => {
   expect(myfoo.tagName).toBe('FOO-BOX');
 });
 
-test.skip('Test outerHTML matches (does not work)', () => {
+test('Test outerHTML matches', () => {
   expect(myfoo.outerHTML).toBe('<foo-box>My Foo Bar Element</foo-box>');
 });
